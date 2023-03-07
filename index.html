@@ -1,75 +1,125 @@
-<!DOCTYPR html>
+<!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Gift To Mom </title>
-        
-        <!-- Link CSS Style.css file-->
-        
-        <link rel="stylesheet" href="style.css">
-        
-    </head>
-    <body>
-        <div class='moon'>
-            <div class='crater1'></div>
-            <div class='crater2'></div>
-            <div class='crater3'></div>
-        </div>
-        
-        <canvas id="canvas"></canvas>
-        
-        <div id="sea"></div>
-        <div id="beach"></div>
-        
-        <img src="https://dl.dropbox.com/s/2k0mtrxc2dqurmh/jumping.png" alt="Jumping-people" id="people" />
-        
-        <div id="merrywrap" class="merrywrap">
-            <div class="giftbox">
-                <div class="cover">
-                    <div></div>
-                </div>
-                
-                <div class="box"></div>
-            </div>
-            
-            <div class="icons">
-                <div class="row">
-                    <span>H</span>
-                    <span>a</span>
-                    <span>p</span>
-                    <span>p</span>
-                    <span>y</span>
-                    
-                </div>
-                <div class="row">
-                    <span>W</span>
-                    <span>o</span>
-                    <span>m</span>
-                    <span>e</span>
-                    <span>n</span>
-                    <span>'</span>
-                    <span>s</span>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gift To Anna</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
 
-                <div class="row">
-                    <span>D</span>
-                    <span>a</span>
-                    <span>y</span>
-                </div>
-                
-                <div class="row">
-                    <span>M</span>
-                    <span>O</span>
-                    <span>M</span>
-                </div>
-            </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/flower.css" />
+    <link rel="stylesheet" href="styles/card.css" />
+  </head>
+  <body>
+    <div class="moon">
+      <div class="crater1"></div>
+      <div class="crater2"></div>
+      <div class="crater3"></div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <div id="sea"></div>
+    <div id="beach"></div>
+
+    <img
+      src="https://dl.dropbox.com/s/2k0mtrxc2dqurmh/jumping.png"
+      alt="Jumping-people"
+      id="people"
+    />
+
+    <div id="merrywrap" class="merrywrap">
+      <div class="giftbox">
+        <div class="cover">
+          <div></div>
         </div>
-        
-        <div id="video"></div>
-        
-        
-        <script src="index.js"></script>
-        
-    </body>
+
+        <div class="box"></div>
+      </div>
+
+      <div class="icons">
+        <div class="row">
+          <span>H</span>
+          <span>a</span>
+          <span>p</span>
+          <span>p</span>
+          <span>y</span>
+        </div>
+        <div class="row">
+          <span>W</span>
+          <span>o</span>
+          <span>m</span>
+          <span>e</span>
+          <span>n</span>
+          <span>'</span>
+          <span>s</span>
+        </div>
+
+        <div class="row">
+          <span>D</span>
+          <span>a</span>
+          <span>y</span>
+        </div>
+
+        <div class="row">
+          <span>B</span>
+          <span>a</span>
+          <span>e</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flower -->
+    <div id="castle">
+      <!-- <div id="table"></div> -->
+      <div class="shade-wrap hover-animation" id="main">
+        <div id="flower-wrap">
+          <div id="stem"></div>
+          <div id="petal1"></div>
+          <div id="petal2"></div>
+          <div id="petal3"></div>
+          <div id="petal4"></div>
+          <div id="petal5"></div>
+          <div id="falling-petal"></div>
+          <div id="leaf1"></div>
+          <div id="leaf2"></div>
+        </div>
+      </div>
+      <div class="shade-wrap" id="sub">
+        <div id="shade-main-reflections"></div>
+        <div id="shade-main">
+          <div id="shade-handle-big"></div>
+          <div id="shade-handle-small"></div>
+          <div id="top-reflection"></div>
+          <div id="bottom-shade"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="card">
+      <p>
+        You’re not the most important person <br />
+        You’re the only person <br />
+        You fill my heart with joy and love <br />
+        You’re the best gift to me <br />
+      </p>
+      <p class="card-footer">PS: Love u <3</p>
+    </div>
+
+    <div id="video-container">
+      <div id="video"></div>
+      <img src="assets/music-disc.gif" alt="GIF image" id="music-disc" />
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/flower.js"></script>
+  </body>
 </html>
